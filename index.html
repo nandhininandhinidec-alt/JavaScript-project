@@ -1,0 +1,372 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nandhini C - Student and Aspiring Software Developer Portfolio">
+    <title>NANDHINI C | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111a2e;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            color: #5eead4;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover {
+            color: #5eead4;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(36px, 5vw, 58px);
+            margin: 12px 0;
+        }
+
+        .hero-text h1 span,
+        .section-title span {
+            color: #5eead4;
+        }
+
+        .hero-text p {
+            color: #b7c3d8;
+            max-width: 550px;
+        }
+
+        .tag {
+            color: #5eead4 !important;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .profile {
+            width: 270px;
+            height: 320px;
+            border: 3px solid #5eead4;
+            border-radius: 25px;
+            object-fit: cover;
+            box-shadow: 0 0 35px #5eead433;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            background: #5eead4;
+            color: #0b1120;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .about-text {
+            max-width: 800px;
+            color: #c4cede;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 22px;
+            background: #111a2e;
+            border: 1px solid #5eead4;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            background: #5eead4;
+            color: #0b1120;
+        }
+
+        .skill-heading {
+            color: #5eead4;
+            margin-bottom: 15px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: #111a2e;
+            padding: 25px;
+            border: 1px solid #26344c;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #5eead4;
+        }
+
+        .card h3 {
+            color: #5eead4;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #c4cede;
+        }
+
+        .contact p {
+            margin-bottom: 12px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact a {
+            color: #5eead4;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111a2e;
+            color: #aab6ca;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+                font-size: 14px;
+            }
+
+            .hero {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .profile {
+                width: 220px;
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">NANDHINI C.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="tag">Welcome to my portfolio</p>
+
+            <h1>Hi, I'm <span>NANDHINI C</span></h1>
+
+            <h2>B.Sc. Computer Science Student</h2>
+            <h3>Aspiring Software Developer</h3>
+
+            <p>
+                I am a Computer Science student passionate about
+                programming, technology, and software development.
+                I enjoy learning Python, Java, and C and creating
+                useful applications to solve real-world problems.
+            </p>
+
+            <a href="#about" class="btn">Explore My Portfolio</a>
+        </div>
+
+        <!-- Replace nandhini.jpg with your uploaded photo filename -->
+        <img src="nandhini.jpg"
+             alt="Nandhini C Profile Photo"
+             class="profile">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p class="about-text">
+            Hello! I'm Nandhini C, a B.Sc. Computer Science student
+            at KG College of Arts and Science, Tamil Nadu.
+            I am interested in programming and software development.
+            My programming skills include Python, Java, and C.
+            I enjoy improving my technical knowledge by developing
+            practical projects. My current project is a Hospital
+            Patient Registration and Appointment Scheduling System.
+            My goal is to become a skilled software developer and
+            continuously learn new technologies.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My <span>Skills</span></h2>
+
+        <h3 class="skill-heading">Programming Languages</h3>
+
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C</div>
+        </div>
+
+        <h3 class="skill-heading" style="margin-top: 28px;">
+            Web Technologies
+        </h3>
+
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Hospital Patient Registration and Appointment Scheduling System</h3>
+
+                <p>
+                    A Java-based project designed to manage patient
+                    registration and doctor appointments. It helps
+                    organize patient details and appointment
+                    information in a simple and accessible format.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Simple Payroll Slip Generator</h3>
+
+                <p>
+                    A programming project that calculates employee
+                    salary details, including allowances and gross
+                    salary, and displays the payroll information.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <p>
+            Email:
+            <a href="mailto:nandhininandhinidec@gmail.com">
+                nandhininandhinidec@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/nandhininandhinidec-alt"
+               target="_blank"
+               rel="noopener noreferrer">
+                github.com/nandhininandhinidec-alt
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 NANDHINI C | Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
